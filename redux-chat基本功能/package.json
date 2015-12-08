@@ -1,0 +1,50 @@
+{
+  "name": "redux-chat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "testServer": "mocha --compilers js:babel-core/register --require ./test/serverTestHelper.js ./test/server --recursive",
+    "testServer:watch": "npm run testServer -- --watch",
+    "testClient": "mocha --compilers js:babel-core/register --require ./test/ClientTestHelper.js ./test/client --recursive",
+    "testClient:watch": "npm run testClient -- --watch"
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "react"
+    ]
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.3.4",
+    "express": "^4.13.3",
+    "immutable": "^3.7.5",
+    "mocha": "^2.3.4",
+    "react": "^0.14.3",
+    "react-addons-pure-render-mixin": "^0.14.3",
+    "react-dom": "^0.14.3",
+    "react-hot-loader": "^1.3.0",
+    "react-mixin": "^3.0.3",
+    "react-redux": "^4.0.0",
+    "redux": "^3.0.4",
+    "socket.io": "^1.3.7",
+    "socket.io-client": "^1.3.7",
+    "uuid": "^2.0.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.2.0",
+    "babel-core": "^6.2.1",
+    "babel-loader": "^6.2.0",
+    "babel-preset-es2015": "^6.1.18",
+    "babel-preset-react": "^6.1.18",
+    "chai": "^3.4.1",
+    "chai-immutable": "^1.5.3",
+    "webpack": "^1.12.9",
+    "webpack-dev-server": "^1.14.0",
+    "jsdom": "^5.6.1",
+    "react-addons-test-utils": "^0.14.3"
+  }
+}

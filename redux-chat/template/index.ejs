@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Redux socket.io Chat app</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+	<div id="app">
+		<div class="flex-row">
+			<nav id="chat-nav">
+				<p>聊天室列表</p>
+				<div class="chat-room-list">
+					<a  href="">room1</a>
+					<a   href="" class="active"> room2</a>
+					<a  href="">room3</a>
+				</div>
+				<button class="btn color-2"> + 创建聊天室</button>
+			</nav>
+			<section id="chat-main" class="flex">
+				<header class="flex-row">
+					<h3>当前聊天室：room2</h3>
+					<span class="flex"></span>
+					<button class="btn sm">X 删除该聊天室</button>
+				</header>
+				<ul class="chat-messages">
+					<li>
+						<div class="message-inner">
+							<p class="chat-username">Julia<small>14:22</small></p>
+							<p>some message goes here</p>
+						</div>
+					</li>
+					<li>
+						<div class="message-inner">
+							<p class="chat-username">Julia<small>14:24</small></p>
+							<p>tempor incididunt ut labore et tempor incididunt ut labore et </p>
+						</div>
+					</li>
+					<li class="message-self">
+						<div class="message-inner">
+							<p class="chat-username">Eisneim<small>14:32</small></p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+						</div>
+					</li>
+					<li>
+						<div class="message-inner">
+							<p class="chat-username">Julia<small>14:24</small></p>
+							<p>tempor incididunt ut labore et tempor incididunt ut labore et </p>
+						</div>
+					</li>
+				</ul>
+				<div id="chat-inputbox">
+					<form class="flex-row">
+						<div class="flex">
+							<textarea name="message" rows="4"></textarea>
+						</div>
+						<div style="width:130px;text-align:right">
+							<button type="submit" class="btn lg color-2">发送</button>
+						</div>
+					</form>
+				</div>
+			</section>
+		</div>
+	</div>
+	<script src="/build/boundle.js"></script>
+</body>
+</html>
